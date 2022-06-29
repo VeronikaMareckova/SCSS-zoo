@@ -1,0 +1,61 @@
+/*************************************************/
+//=== Navigace ===
+    //COLORS
+    $nav-backgraund: #343a40;//#cbd9e6 //pozadi nav i img
+    $nav-text:#f8f9fa;
+    //SIZES
+    $nav-height: 50px;
+    //PADDING
+    $nav-padding: 0 10px; //vychozi nastaveni navigace
+    $nav-font-size: 20px;
+
+/*************************************************/    
+//  === MAIN ===
+//CONTAINER
+$container-max-width: 1200px;
+$container-padding: 0 1%; //odsazeni od rohu napr. u mobil.
+
+//  === MAIN ===
+$backgraund-color: #fff;
+$text-color: #343a40;
+$all-radius: 15px;
+$backgraund-hover:#04AA6D;
+
+
+//=== IMG ===
+$img-width: 70%;
+$img-radius: $all-radius; //muzu zmenit na vlastni hodnotu | vychozi nastaveni $all-radius
+
+
+//=== <a> ===
+$btn-background: $nav-backgraund; //stejne pozadi jako u nav
+$btn-text: $nav-text; //stejne barva jako u navigace
+$btn-padding: 10px 15px; //vnitrni okraje
+$btn-border: 2px solid darken($btn-background, 5%); //ramecek tmavci o 5%
+$btn-radius: $all-radius; //muzu zmenit na vlastni hodnotu | vychozi nastaveni $all-radius
+
+// === LIST OF COLORS ===
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+
+$jumbotron:#e9ecef;
+
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;

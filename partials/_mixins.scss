@@ -1,0 +1,112 @@
+//=== BODY ===
+@mixin bodySettings {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400; //Vzdusnost
+    line-height: 1.5; //radek 1.5
+}
+
+
+/*************************************************/
+//=== Navigace ===
+@mixin navigation {
+    background-color: $nav-backgraund;
+    position: fixed; /*fixni pozice*/
+    top: 0; /* nav zacina od shora */
+    width: 100%; /* nav po cele obrazovce */
+    text-align: center; /*stred*/
+    z-index: 100;
+    li{
+        list-style-type: none; //odstraneni tecek
+        display: inline-block; //vedle sebe
+        line-height: $nav-height; //vyska radku = vyska navigace
+        a{
+            padding: $nav-padding; //odsazeni
+            text-decoration: none; //odstraneni podtrzeni
+            font-size: $nav-font-size; //velikost pisma
+            color: $nav-text; //barva textu
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}
+/*****************************************************/
+/***obecne***/
+//=== MEIN stred stranky ===
+@mixin container {
+    max-width: $container-max-width; 
+    margin: 0 auto; //zarovnani na stred
+    padding: $container-padding; 
+    margin-top: $nav-height; //vyska odszeni = vyska navigace
+}
+//obecne <p>
+@mixin p {
+    font-size: 16px;
+    text-align: justify; //dobloku
+}
+
+/***sekce 2 ***/
+//===GRID 50% 1/2 ...50 | 2/2 ....51
+@mixin MyGrid50 {
+    //border: 2px solid red;
+    width: 48%; 
+    height: auto; 
+    margin-right: 1%; //odsazeni rohu
+    display: inline-block;
+
+}
+
+@mixin MyGrid51 {
+    //border: 2px solid blue;
+    width: 48%; 
+    height: auto; 
+    display: inline-block;
+}
+
+
+
+
+//====RADIUS ====
+//vychozi zaobleni (pouze v mixine)
+@mixin my-border-radius($radius: $all-radius){
+    border-radius: $radius;
+}
+
+        //==TLACITKA==
+    //vychozi tlatitko btn
+    @mixin Mybtn {
+        text-decoration: none; //bez potrzeni
+        background: $btn-background; //barva pozadi |nastaveni ve _variables
+        color: $btn-text; //barva textu 
+        padding: $btn-padding; //vnitrni okraj
+        border: $btn-border; //ramecek
+        @include my-border-radius($btn-radius); //vychozi zaobleni
+
+        
+    }
+        //==Radius img==
+    //pro pripad se budu chtit $img-radius zmenit
+    @mixin imgRadius {
+        @include my-border-radius($img-radius);
+    }
+
+        //==Nastylovani OBRAZKU==
+    @mixin imgStyle {
+        width: $img-width; //sirka obrazku
+        display: block; 
+        margin: 0 auto; //na stred
+    }
+
+//==================================
+//***sekce 3 ***
+@mixin MyGrid100 {
+    //border: 2px solid green;
+    width: 100%;
+    height: auto; 
+    display: block;
+
+}

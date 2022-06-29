@@ -1,0 +1,190 @@
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*****************************************************/
+/***obecne***/
+/***sekce 2 ***/
+*, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: #343a40;
+  position: fixed;
+  /*fixni pozice*/
+  top: 0;
+  /* nav zacina od shora */
+  width: 100%;
+  /* nav po cele obrazovce */
+  text-align: center;
+  /*stred*/
+  z-index: 100;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 50px;
+}
+
+nav li a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f8f9fa;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1%;
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+main h2, main p {
+  color: #343a40;
+}
+
+main p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+main .section2 {
+  margin-top: 5px;
+}
+
+main .section2 .Grid50 {
+  width: 48%;
+  height: auto;
+  margin-right: 1%;
+  display: inline-block;
+}
+
+main .section2 .Grid50 img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+main .section2 .Grid50 a {
+  text-align: center;
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  text-decoration: none;
+  background: #343a40;
+  color: #f8f9fa;
+  padding: 10px 15px;
+  border: 2px solid #292d32;
+  border-radius: 15px;
+}
+
+main .section2 .Grid50 a:hover {
+  background: #04AA6D;
+  border: #fff;
+}
+
+main .section2 .Grid51 {
+  width: 48%;
+  height: auto;
+  display: inline-block;
+}
+
+main .section2 .Grid51 img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+main .section2 .Grid51 a {
+  text-align: center;
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  text-decoration: none;
+  background: #343a40;
+  color: #f8f9fa;
+  padding: 10px 15px;
+  border: 2px solid #292d32;
+  border-radius: 15px;
+}
+
+main .section2 .Grid51 a:hover {
+  background: #04AA6D;
+  border: #fff;
+}
+
+main .section3 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main .section3 img {
+  width: 100%;
+}
+
+main .section4 {
+  margin-bottom: 10px;
+}
+
+main .section4 p {
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+main .section4 p svg {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  color: #343a40;
+}
+/*# sourceMappingURL=style.css.map */

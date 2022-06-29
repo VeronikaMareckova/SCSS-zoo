@@ -1,0 +1,129 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+//pozadi stranky 
+*, body{
+    @include bodySettings;
+    
+}
+
+h1{ font-size: 2.5rem;}
+h2{ font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{ font-size: 1.5rem;}
+h5{ font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+p{margin-bottom: 1rem;}
+
+//**************************
+//=== Navigace ===
+nav{
+   @include navigation;
+}
+
+//**************************
+//=== MAIN === //***obecne***
+main{
+    @include container;
+    background-color: $backgraund-color; //pozadi
+
+    //======
+    h2, p{
+        color: $text-color; //barva textu
+       
+    }
+
+    p{
+        @include p; //do bloku + velikost  
+    }
+
+    //***section2***
+    .section2{
+        margin-top: 5px;
+
+        //== MUJ GRID 1/2 ==
+        .Grid50{
+            @include MyGrid50;
+            //====
+            img{
+                @include imgStyle; //sirka + na stred
+                @include imgRadius;
+            }
+
+            //====
+            a{
+                text-align: center; //stred
+                display: block;
+                width: 150px;
+                margin: 10px auto; //stred
+                @include Mybtn;
+
+                &:hover {
+                    background: $backgraund-hover;
+                    border: #fff;
+                }
+            }
+        }
+
+        //== MUJ GRID 2/2 ==
+        .Grid51{
+            @include MyGrid51;
+            //====
+            img{
+                @include imgStyle; //sirka + na stred
+                @include imgRadius;
+            }
+
+            //====
+            a{
+                text-align: center; //stred
+                display: block;
+                width: 150px;
+                margin: 10px auto; //stred
+                @include Mybtn;
+
+                &:hover {
+                    background: $backgraund-hover;
+                    border: #fff;
+                }
+            }
+        }
+    }
+    
+
+    //***section3*** FOTOGRAFIE FIRMY
+    .section3{
+
+        @include MyGrid100;
+  
+        img{
+           width: 100%;
+        }
+    }
+
+    //***section4*** kontakt
+   .section4{
+    margin-bottom: 10px;
+        p{
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: left;
+        
+            svg{
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    //***section5*** mapa
+
+}
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    color: $nav-backgraund;
+}
